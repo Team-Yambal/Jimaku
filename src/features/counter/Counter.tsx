@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '@mui/material/Button'
 
 type CounterProps = {
   count: number
@@ -10,9 +9,7 @@ export const Counter = ({ count, onClickAdd }: CounterProps) => {
   return (
     <div>
       {count}
-      <Button variant="contained" onClick={onClickAdd}>
-        Add
-      </Button>
+      <button onClick={onClickAdd}>Add</button>
     </div>
   )
 }
