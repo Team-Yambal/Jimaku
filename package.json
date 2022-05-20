@@ -51,7 +51,6 @@
     "react-redux": "^8.0.1",
     "react-router-dom": "^6.3.0",
     "redux": "^4.2.0",
-    "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.5"
   },
   "scripts": {
@@ -67,11 +66,5 @@
     "api:build": "aspida",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
-  },
-  "resolutions": {
-    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
-  },
-  "browser": {
-    "[module-name]": false
   }
 }
