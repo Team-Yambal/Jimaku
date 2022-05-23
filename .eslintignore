@@ -1,0 +1,8 @@
+node_modules/
+public/
+tmp/
+storybook-static/
+!.storybook
+**/*/$api.ts
+/.eslintrc.js
+/lib

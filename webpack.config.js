@@ -9,7 +9,7 @@ module.exports = {
   mode: process.env.NODE_CONFIG_ENV,
   entry: path.resolve(__dirname, 'src/bootstrap.tsx'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'app-[hash].js',
   },
   resolve: {

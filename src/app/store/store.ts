@@ -4,6 +4,7 @@ import { setupListeners } from '@reduxjs/toolkit/query'
 import { weatherQueries } from './queries/weatherQueries'
 import { newsQueries } from './queries/newsQueries'
 import { createRootReducer } from './reducer'
+import { daServiceQueries } from './queries/daSetviceQueries'
 
 export type RootState = ReturnType<typeof rootReducer>
 
@@ -13,6 +14,7 @@ export const store = configureStore({
   devTools: process.env.NODE_ENV !== 'production',
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware()
+      .concat(daServiceQueries.middleware)
       .concat(weatherQueries.middleware)
       .concat(newsQueries.middleware),
 })
